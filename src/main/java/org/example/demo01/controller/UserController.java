@@ -8,9 +8,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @CrossOrigin
 @RequestMapping(value ="api/v1/")
+
 public class UserController {
     @GetMapping("/getUser")
     public String getUser(){
         return "All Users";
     }
-}
+
+    @GetMapping("/upload")
+        public int myupload(){
+            return 5+10;
+        }
+    }
